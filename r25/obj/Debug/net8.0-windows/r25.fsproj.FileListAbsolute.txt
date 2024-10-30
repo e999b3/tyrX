@@ -1,0 +1,13 @@
+C:\github\e999b3\tyrX\r25\obj\Debug\net8.0-windows\r25.fsproj.AssemblyReference.cache
+C:\github\e999b3\tyrX\r25\obj\Debug\net8.0-windows\r25.AssemblyInfoInputs.cache
+C:\github\e999b3\tyrX\r25\obj\Debug\net8.0-windows\r25.AssemblyInfo.fs
+C:\github\e999b3\tyrX\r25\obj\Debug\net8.0-windows\r25.fsproj.CoreCompileInputs.cache
+C:\github\e999b3\tyrX\r25\bin\Debug\net8.0-windows\r25.deps.json
+C:\github\e999b3\tyrX\r25\bin\Debug\net8.0-windows\r25.dll
+C:\github\e999b3\tyrX\r25\bin\Debug\net8.0-windows\r25.pdb
+C:\github\e999b3\tyrX\r25\bin\Debug\net8.0-windows\r25.xml
+C:\github\e999b3\tyrX\r25\obj\Debug\net8.0-windows\r25.dll
+C:\github\e999b3\tyrX\r25\obj\Debug\net8.0-windows\refint\r25.dll
+C:\github\e999b3\tyrX\r25\obj\Debug\net8.0-windows\r25.xml
+C:\github\e999b3\tyrX\r25\obj\Debug\net8.0-windows\r25.pdb
+C:\github\e999b3\tyrX\r25\obj\Debug\net8.0-windows\ref\r25.dll
