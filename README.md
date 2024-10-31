@@ -53,7 +53,7 @@ These scripts are set to be compiled into the assembly and can be accessed in Re
 
 ### Workflow
 
-My preferred workflow when programming with F# for Revit is an iterative **try-and-error** approach. This involves making frequent changes to the code and testing them quickly. The most efficient way to do this is to save my work-in-progress code and recompile it only when I trigger the command to run it. In fact, I use keyboard shortcuts to run my code, avoiding the time wasted searching for the right button to click. Once I'm satisfied with the code, or if I want to experiment with alternative solutions without losing my progress, I save a copy of the current code for comparison and further development.
+My preferred workflow when programming with F# for Revit is an iterative **try-and-error** approach. This involves making frequent changes to the code and testing them quickly. The most efficient way to do this is to **just save** my work-in-progress code and recompile it **only** by clicking the command button to run it. In fact, I use keyboard shortcuts to run my code, avoiding the time wasted searching for the right button to click. Once I'm satisfied with the code, or if I want to experiment with alternative solutions without losing my progress, I save a copy of the current code for comparison and further development.
 
 This is where the two compiler scripts come into play.
 
