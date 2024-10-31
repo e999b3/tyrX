@@ -20,6 +20,10 @@ You can either:
 ### 4. Edit the Add-in Path
 Modify the `tyrX.addin` file to point to the correct path of the built assembly `r25.dll`.
 
+![image](https://github.com/user-attachments/assets/31d110b3-2d51-4da3-8610-01b91d73b3ce)
+
+Change the highlighted line `<Assembly>...</Assembly>` to your own assembly path.
+
 ### 5. Copy the Add-in File
 Copy the `tyrX.addin` file to the appropriate Revit add-in directory:
 
