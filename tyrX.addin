@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Assembly>C:\github\e999b3\tyrX\r25\bin\x64\Release\net8.0-windows\r25.dll</Assembly>
+    <FullClassName>tyrX.Core.CoreApp</FullClassName>
+    <AddInId>9ce3597b-7085-40a9-80e5-b2759f8e1f08</AddInId>
+    <Name>App tyrX</Name>
+    <Text>tyrX Core App</Text>
+    <VendorId>chings.eu</VendorId>
+    <VendorDescription>Powered by Chings e.U.</VendorDescription>
+    <Description></Description>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <Discipline>Any</Discipline>
+    <AvailabilityClassName></AvailabilityClassName>
+    <LargeImage></LargeImage>
+    <SmallImage></SmallImage>
+    <LongDescription></LongDescription>
+    <TooltipImage></TooltipImage>
+    <LanguageType></LanguageType>
+    <AllowLoadIntoExistingSession></AllowLoadIntoExistingSession>
+  </AddIn>
+</RevitAddIns>

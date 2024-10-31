@@ -8,7 +8,7 @@ open System.Reflection
 
 
 [<assembly: System.Reflection.AssemblyCompanyAttribute("r25")>]
-[<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
+[<assembly: System.Reflection.AssemblyConfigurationAttribute("Release")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("2024.10.31.13")>]
 [<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6496883e66db10f4c6bd1c21638ba1a29ff0a8a2")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("r25")>]

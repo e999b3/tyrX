@@ -17,6 +17,7 @@ type Blank() as this =
             //let selected = uidoc.Selection.GetElementIds() |> Seq.map uidoc.Document.GetElement |> List.ofSeq
 
             try
+                let t = new 
             
                 //let t = new Transaction(uidoc.Document, this |> string)
                 //t.Start() |> ignore

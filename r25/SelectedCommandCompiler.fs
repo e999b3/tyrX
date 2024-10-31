@@ -18,13 +18,14 @@ type ``Selected Command Compiler``() as this =
         override x.Execute(cdata, msg, elset) =
             let d = debug()
             sprintf $"{this} is running." |> d.info
-            let t86_dt() = System.DateTime.Now.ToString("yyyyMMdd-HHmmss")
+            //let t86_dt() = System.DateTime.Now.ToString("yyyyMMdd-HHmmss")
 
             let thisAsm = System.Reflection.Assembly.GetExecutingAssembly()
 
             let loc = thisAsm.Location
 
             let dir = loc |> System.IO.Path.GetDirectoryName
+            d.info(dir)
 
             // Create temp file
             let fn = System.IO.Path.GetTempFileName()
@@ -35,8 +36,9 @@ type ``Selected Command Compiler``() as this =
             sprintf $"{fndll}" |> d.info
 
             // Get user input from drop-down list
-            let pthdir = @"C:\Users\ching\github\tyrX\r25\cmd"
-            let fils = System.IO.Directory.GetFiles(pthdir, "*.fs") |> List.ofArray
+            //let pthdir = sprintf $"{__SOURCE_DIRECTORY__}/cmd"
+
+            let fils = System.IO.Directory.GetFiles(tyrX.Core.app.thisCmd, "*.fs") |> List.ofArray
             fils
             |> List.map(fun pth -> pth |> System.IO.Path.GetFileNameWithoutExtension, pth)
             |> fun dict ->

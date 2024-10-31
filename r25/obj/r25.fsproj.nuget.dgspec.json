@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\github\\e999b3\\tyrX\\r25\\r25.fsproj": {}
+    "c:\\github\\e999b3\\tyrX\\r25\\r25.fsproj": {}
   },
   "projects": {
-    "C:\\github\\e999b3\\tyrX\\r25\\r25.fsproj": {
+    "c:\\github\\e999b3\\tyrX\\r25\\r25.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\github\\e999b3\\tyrX\\r25\\r25.fsproj",
+        "projectUniqueName": "c:\\github\\e999b3\\tyrX\\r25\\r25.fsproj",
         "projectName": "r25",
-        "projectPath": "C:\\github\\e999b3\\tyrX\\r25\\r25.fsproj",
+        "projectPath": "c:\\github\\e999b3\\tyrX\\r25\\r25.fsproj",
         "packagesPath": "C:\\Users\\ching\\.nuget\\packages\\",
-        "outputPath": "C:\\github\\e999b3\\tyrX\\r25\\obj\\",
+        "outputPath": "c:\\github\\e999b3\\tyrX\\r25\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ching\\AppData\\Roaming\\NuGet\\NuGet.Config",

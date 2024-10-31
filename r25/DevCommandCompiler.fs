@@ -8,87 +8,6 @@ open FSharp.Compiler.Diagnostics
 
 open System.Windows
 
-type debug([<System.Runtime.CompilerServices.CallerFilePath>] ?pfile:string) =
-    // debugged file name
-    let fname = Array.last (pfile.Value.Split '\\')
-    // Private _msg
-    let mutable _mark = ""
-    let mutable _msg = ""
-    // Event
-    let msgUpdate = new Event<_>()
-    // Interfaces
-    let w = new System.Windows.Window()
-    let sv = new System.Windows.Controls.ScrollViewer()
-    let p = new System.Windows.Controls.StackPanel()
-    do  
-        w.WindowStyle <- WindowStyle.ToolWindow
-        w.WindowStartupLocation <- WindowStartupLocation.CenterOwner
-        w.SizeToContent <- SizeToContent.WidthAndHeight
-        w.MinWidth <- 300.0
-        w.MinHeight <- 100.0
-        sv.Content <- p
-        w.Content <- sv
-        //w.Show() |> ignore
-
-    // publish Event to IEvent
-    member this.window = w
-    member this.updateMsg = msgUpdate.Publish
-    member this.trace ([<System.Runtime.CompilerServices.CallerLineNumber>] ?line:int) = line.Value
-    // _msg = info and when info changes
-    member this.msg 
-        with get() = _msg
-        and set(str) =
-            _msg <- str
-            msgUpdate.Trigger()
-    // Add function to IEvent
-    member this.info(v:obj, [<System.Runtime.CompilerServices.CallerLineNumber>] ?line:int) =
-        
-        w.Title <- "tyrX © debugs: " + fname + " " + System.DateTime.Now.ToLongTimeString()
-        w.Show() // Show window when getting info
-        w.Topmost <- true
-        match v with
-        | :? string ->
-            this.msg <- v:?>string
-        | :? List<obj> as lst ->
-            this.msg <- sprintf "c# List %A" (List.ofSeq lst) 
-        | :? (obj list) | :? (seq<obj>) ->
-            this.msg <- sprintf "f# List %A" v
-        //| :? System.Collections.Generic.IList<obj> as ilst ->
-        //    this.msg <- sprintf "c# List %A" (List.ofSeq ilst)
-        | _ ->
-            this.msg <- string v
-
-        _mark <- System.DateTime.Now.ToLongTimeString() + (sprintf "|Line(%d) " (line.Value))
-        // Write info with label
-        //let l = new System.Windows.Controls.Label()
-        //l.Content <- _mark + this.msg
-        // Write infor with textblock
-        let tbx = new System.Windows.Controls.TextBox()
-        tbx.Text <- _mark + this.msg
-        tbx.BorderThickness <- Thickness(0.0)
-        p.Children.Add(tbx) |> ignore
-
-//module load = 
-//    let guid() = System.Guid.NewGuid() |> string
-//    let addin(pthdll:string)(namcls:string)(guid:string) = 
-//        sprintf """
-//<?xml version="1.0" encoding="utf-8"?>
-//<RevitAddIns>
-//  <AddIn Type="Command">
-//    <Assembly>%s</Assembly>
-//    <FullClassName>%s</FullClassName>
-//    <AddInId>%s</AddInId>
-//    <Name>tyr</Name>
-//    <Text>%s</Text>
-//    <VendorId>chings.eu</VendorId>
-//    <VendorDescription>Powered by Chings e.U.</VendorDescription>
-//    <Description></Description>
-//    <VisibilityMode>AlwaysVisible</VisibilityMode>
-//    <Discipline>Any</Discipline>
-//    <AvailabilityClassName></AvailabilityClassName>
-//  </AddIn>
-//</RevitAddIns> """ pthdll namcls (guid) (namcls.Split '.' |> Seq.last)
-
 [<Regeneration(RegenerationOption.Manual)>]
 [<TransactionAttribute(TransactionMode.Manual)>]
 /// <summary>
@@ -99,7 +18,7 @@ type ``Develop Command Compiler``() =
         override x.Execute(cdata, msg, elset) =
             let d = debug()
 
-            let t86_dt() = System.DateTime.Now.ToString("yyyyMMdd-HHmmss")
+            //let t86_dt() = System.DateTime.Now.ToString("yyyyMMdd-HHmmss")
 
             let thisAsm = System.Reflection.Assembly.GetExecutingAssembly()
 
@@ -128,7 +47,7 @@ type ``Develop Command Compiler``() =
             //|> String.concat "\n"
             //|> fun content ->
 
-            let content = @"C:\Users\ching\github\tyrX\r25\cmd\develop.fs" |> System.IO.File.ReadAllText
+            let content = sprintf $"{tyrX.Core.app.thisCmd}/develop.fs" |> System.IO.File.ReadAllText
 
             //sprintf $"{content} is to be written." |> d.info
             System.IO.File.WriteAllText(fnfsx, content)

@@ -6,6 +6,7 @@ C:\github\e999b3\tyrX\r25\obj\x64\Debug\net8.0-windows\r25.fsproj.AssemblyRefere
 C:\github\e999b3\tyrX\r25\obj\x64\Debug\net8.0-windows\r25.AssemblyInfoInputs.cache
 C:\github\e999b3\tyrX\r25\obj\x64\Debug\net8.0-windows\r25.AssemblyInfo.fs
 C:\github\e999b3\tyrX\r25\obj\x64\Debug\net8.0-windows\r25.fsproj.CoreCompileInputs.cache
+C:\github\e999b3\tyrX\r25\obj\x64\Debug\net8.0-windows\r25.sourcelink.json
 C:\github\e999b3\tyrX\r25\obj\x64\Debug\net8.0-windows\r25.dll
 C:\github\e999b3\tyrX\r25\obj\x64\Debug\net8.0-windows\refint\r25.dll
 C:\github\e999b3\tyrX\r25\obj\x64\Debug\net8.0-windows\r25.xml

@@ -1,19 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+	<OutputType>Library</OutputType>
+	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <TargetFramework>net8.0-windows</TargetFramework>
 	  <UseWindowsForms>true</UseWindowsForms>
 	  <UseWPF>true</UseWPF>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Platforms>AnyCPU;x64</Platforms>
-    <AssemblyVersion>2024.10.30.1</AssemblyVersion>
-    <FileVersion>2024.10.30.1</FileVersion>
+    <AssemblyVersion>2024.10.31.13</AssemblyVersion>
+    <FileVersion>2024.10.31.13</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="CoreApp.fs" />
     <Compile Include="DevCommandCompiler.fs" />
-    <None Include="cmd\blank.fs" />
     <Compile Include="SelectedCommandCompiler.fs" />
+    <None Include="cmd\develop.fs" />
+    <None Include="cmd\blank.fs" />
   </ItemGroup>
 
   <ItemGroup>

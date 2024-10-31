@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I/wpCxU5Lr0=",
+  "dgSpecHash": "g8DgQLqeHE4=",
   "success": true,
-  "projectFilePath": "C:\\github\\e999b3\\tyrX\\r25\\r25.fsproj",
+  "projectFilePath": "c:\\github\\e999b3\\tyrX\\r25\\r25.fsproj",
   "expectedPackageFiles": [
     "C:\\Users\\ching\\.nuget\\packages\\fsharp.compiler.service\\43.8.401\\fsharp.compiler.service.43.8.401.nupkg.sha512",
     "C:\\Users\\ching\\.nuget\\packages\\fsharp.core\\8.0.401\\fsharp.core.8.0.401.nupkg.sha512",
