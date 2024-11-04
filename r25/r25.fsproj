@@ -16,8 +16,8 @@
     <Compile Include="CoreApp.fs" />
     <Compile Include="DevCommandCompiler.fs" />
     <Compile Include="SelectedCommandCompiler.fs" />
-    <None Include="cmd\develop.fs" />
-    <None Include="cmd\blank.fs" />
+	<Compile Include="cmd\develop.fs" />
+	<Compile Include="cmd\blank.fs" />
   </ItemGroup>
 
   <ItemGroup>
