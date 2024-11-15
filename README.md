@@ -20,7 +20,7 @@ You can either:
 - Open the unzipped folder with **Visual Studio Code** or load the solution file in **Visual Studio**.
 
 ### 4. Edit the Add-in Path
-Modify the `tyrX.addin` file to point to the correct path of the built assembly `r25.dll`.
+Modify the `tyrX.addin` file to point to the correct path of the built assembly `rX.dll`.
 
 ![image](https://github.com/user-attachments/assets/31d110b3-2d51-4da3-8610-01b91d73b3ce)
 
@@ -38,7 +38,7 @@ Start **Revit 2025**, and you are ready to go!
 
 ## Usage
 
-Once loaded into the Revit environment, the core application of **tyrX** will search for classes that implement the `IExternalCommand` interface within the compiled `r25.dll` assembly. These classes will then be loaded and recognized as add-ins within Revit.
+Once loaded into the Revit environment, the core application of **tyrX** will search for classes that implement the `IExternalCommand` interface within the compiled `rX.dll` assembly. These classes will then be loaded and recognized as add-ins within Revit.
 
 ### Pre-compiled F# Scripts
 In the root folder, you will find two F# scripts:
