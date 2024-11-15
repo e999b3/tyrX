@@ -40,7 +40,7 @@ Copy the `tyrX.addin` file to the appropriate Revit add-in directory:
 - **For all users**: `%programdata%\Autodesk\Revit\Addins\<RevitMajorVersion>`
 
 ### 7. Launch Revit
-Start **Revit 2025**, and you are ready to go!
+Start **Revit** according to your version, and you are ready to go!
 
 
 ## Usage
