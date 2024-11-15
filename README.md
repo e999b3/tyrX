@@ -33,7 +33,7 @@ When compiling, Visual Studio will choose the targeted Revit API version to refe
 ### 5. Edit the Add-in Path
 Modify the `tyrX.addin` file to point to the correct path of the built assembly `rX.dll`.
 
-![image](https://github.com/user-attachments/assets/31d110b3-2d51-4da3-8610-01b91d73b3ce)
+![image](https://github.com/user-attachments/assets/98498283-4524-4f56-8a62-2f240666bf67)
 
 Change the highlighted line `<Assembly>...</Assembly>` to your own assembly path.
 
