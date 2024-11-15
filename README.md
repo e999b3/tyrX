@@ -1,9 +1,5 @@
 # tyrX
 
-
-
-
- 
 **tyrX** is designed specifically for Autodesk Revit, starting from version 2025. With the shift to the .NET 8.0 framework in Revit 2025, it is essential for associated plugins to align with this update. Building on the legacy of its predecessor, **tyRevit**, **tyrX** continues to offer a lightweight external command solution for Revit, while upholding its core mission: empowering users to create custom Revit workflows using F# programming. It leverages the powerful IntelliSense capabilities of Visual Studio Community and Visual Studio Code to enhance and streamline coding efficiency for Revit development.
 
 ![intro](https://github.com/user-attachments/assets/c5360829-4fcf-46c9-b60c-6c290351cedc)
@@ -26,7 +22,7 @@ You can either:
 ### 4. Check RevitVersion and Compile
 Depending on your Revit version, change the constant **RevitVersion** in the .fsproj file. 
 
-![image](https://github.com/user-attachments/assets/3658b1ce-873f-471b-8fb1-0416740d08eb)
+![image](https://github.com/user-attachments/assets/6e380898-afac-414b-aa17-f3a3583a8278)
 
 When compiling, Visual Studio will choose the targeted Revit API version to reference. If the chosen Revit major version is prior to 2025, the constant **TargetFramework** will be set to **net48**, otherwise it will target **net8.0-windows**.
 
