@@ -1,6 +1,8 @@
 # tyrX
 
-**tyrX** is designed specifically for Autodesk Revit, starting from version 2025. With the shift to the .NET 8.0 framework in Revit 2025, it is essential for associated plugins to align with this update. Building on the legacy of its predecessor, **tyRevit**, **tyrX** continues to offer a lightweight external command solution for Revit, while upholding its core mission: empowering users to create custom Revit workflows using F# programming. It leverages the powerful IntelliSense capabilities of Visual Studio Community and Visual Studio Code to enhance and streamline coding efficiency for Revit development.
+**tyrX** is purpose-built for Autodesk Revit, starting with version 2025, seamlessly adapting to the transition to the .NET 8.0 framework introduced in this release. By dynamically targeting the specified `RevitVersion`, tyrX ensures compatibility with the appropriate framework and Revit API version, offering a streamlined and future-proof development experience. 
+
+As the successor to **tyRevit**, **tyrX** retains its lightweight architecture, delivering an optimized external command solution for Revit. It remains dedicated to empowering users to craft custom workflows in Revit using **F#** programming. With robust support for **IntelliSense** in both Visual Studio Community and Visual Studio Code, tyrX enhances coding efficiency and simplifies the development process, making it an indispensable tool for Revit developers.
 
 ![intro](https://github.com/user-attachments/assets/c5360829-4fcf-46c9-b60c-6c290351cedc)
 
