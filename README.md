@@ -24,7 +24,7 @@ You can either:
 ### 4. Check RevitVersion and Compile
 Depending on your Revit version, change the constant **RevitVersion** in the .fsproj file. 
 
-![image](https://github.com/user-attachments/assets/0a10f84f-8c07-49a3-a35b-a55a5e0d17b5)
+![image](https://github.com/user-attachments/assets/586349e5-1ffb-4441-a813-b61c84913cd8)
 
 When compiling, Visual Studio will choose the targeted Revit API version to reference. If the chosen Revit major version is prior to 2025, the constant **TargetFramework** will be set to **net48**, otherwise it will target **net8.0-windows**.
 
