@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("Chings e. U.")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("2024.11.15.83")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5602253c06509ada5efc0f0e0dcdb26124538ec")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09c62064a13dbde21af6c1ee8ded379030f5aba3")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("rX")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("rX")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("2024.11.15.83")>]

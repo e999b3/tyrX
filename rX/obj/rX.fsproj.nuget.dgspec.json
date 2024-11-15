@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ching\\OneDrive\\Desktop\\tyrX\\rX\\rX.fsproj": {}
+    "C:\\github\\e999b3\\tyrX\\rX\\rX.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\ching\\OneDrive\\Desktop\\tyrX\\rX\\rX.fsproj": {
+    "C:\\github\\e999b3\\tyrX\\rX\\rX.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ching\\OneDrive\\Desktop\\tyrX\\rX\\rX.fsproj",
+        "projectUniqueName": "C:\\github\\e999b3\\tyrX\\rX\\rX.fsproj",
         "projectName": "rX",
-        "projectPath": "C:\\Users\\ching\\OneDrive\\Desktop\\tyrX\\rX\\rX.fsproj",
+        "projectPath": "C:\\github\\e999b3\\tyrX\\rX\\rX.fsproj",
         "packagesPath": "C:\\Users\\ching\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ching\\OneDrive\\Desktop\\tyrX\\rX\\obj\\",
+        "outputPath": "C:\\github\\e999b3\\tyrX\\rX\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ching\\AppData\\Roaming\\NuGet\\NuGet.Config",
