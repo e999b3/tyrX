@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	
+	<PropertyGroup>
+		<Authors>Chings e. U.</Authors>
+		<OutputType>Library</OutputType>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		
+		<!-- Set RevitVersion based on the version you want -->
+		<RevitVersion>2024.0.0</RevitVersion>
+		
+		<MajorVersion>$([System.Int32]::Parse($([System.String]::Copy($(RevitVersion)).Split('.')[0])))</MajorVersion>
+	  	<OutputPath>bin/r$(MajorVersion)\</OutputPath>
+	  	<AssemblyVersion>2024.11.15.83</AssemblyVersion>
+	  	<FileVersion>2024.11.15.83</FileVersion>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<Platforms>AnyCPU;x64</Platforms>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(MajorVersion)' &lt; $([System.Int32]::Parse('2025'))">
+		<TargetFramework>net48</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(MajorVersion)' &gt;= $([System.Int32]::Parse('2025'))">
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="CoreApp.fs" />
+		<Compile Include="DevCommandCompiler.fs" />
+		<Compile Include="SelectedCommandCompiler.fs" />
+		<None Include="cmd\develop.fs" />
+		<None Include="cmd\blank.fs" />
+	</ItemGroup>
+
+	 <!--Use TargetFrameworkCondition to Set Actual Target Framework--> 
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <Optimize>True</Optimize>
+	  <Deterministic>False</Deterministic>
+	</PropertyGroup> 
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+	  <Optimize>True</Optimize>
+	  <Deterministic>False</Deterministic>
+	</PropertyGroup> 
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	  <Deterministic>False</Deterministic>
+	</PropertyGroup> 
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+	  <Deterministic>False</Deterministic>
+	</PropertyGroup>
+
+	<!-- Package References Conditioned by TargetFramework -->
+	<ItemGroup>
+		<PackageReference Update="FSharp.Core" Version="8.0.401" />
+		<PackageReference Include="FSharp.Compiler.Service" Version="43.8.401" />
+		<PackageReference Include="Revit_All_Main_Versions_API_x64" Version="$(MajorVersion).*" PrivateAssets="All" />
+	</ItemGroup>
+	
+	<!-- Log the constant value during the build process -->
+	<Target Name="LogConstants" BeforeTargets="PrepareForBuild">
+		<Message Text="TargetFramework is set to $(TargetFramework)" Importance="High" />
+		<Message Text="BaseOutputPath is set to $(BaseOutputPath)" Importance="High" />
+		<Message Text="RevitVersion is set to $(RevitVersion)" Importance="High" />
+		<Message Text="MajorVersion is calculated as $(MajorVersion)" Importance="High" />
+		<!--<Message Text="CalculatedOutputPath is set as $(CalculatedOutputPath)" Importance="High" />-->
+		<Message Text="OutputPath is set as $(OutputPath)" Importance="High" />
+	</Target>
+</Project>

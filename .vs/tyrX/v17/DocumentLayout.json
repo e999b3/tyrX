@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\github\\e999b3\\tyrX\\",
+  "WorkspaceRootPath": "C:\\Users\\ching\\OneDrive\\Desktop\\tyrX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB413BAB-C731-405E-A440-838126509571}|r25\\r25.fsproj|c:\\github\\e999b3\\tyrx\\r25\\cmd\\develop.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
-      "RelativeMoniker": "D:0:0:{AB413BAB-C731-405E-A440-838126509571}|r25\\r25.fsproj|solutionrelative:r25\\cmd\\develop.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB413BAB-C731-405E-A440-838126509571}|r25\\r25.fsproj|c:\\github\\e999b3\\tyrx\\r25\\cmd\\blank.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
-      "RelativeMoniker": "D:0:0:{AB413BAB-C731-405E-A440-838126509571}|r25\\r25.fsproj|solutionrelative:r25\\cmd\\blank.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+      "AbsoluteMoniker": "D:0:0:{FECFA07D-4D06-4898-AF9A-723B2228932D}|rX\\rX.fsproj|c:\\users\\ching\\onedrive\\desktop\\tyrx\\rx\\rx.fsproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FECFA07D-4D06-4898-AF9A-723B2228932D}|rX\\rX.fsproj|solutionrelative:rx\\rx.fsproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 255,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "rX",
+              "DocumentMoniker": "C:\\Users\\ching\\OneDrive\\Desktop\\tyrX\\rX\\rX.fsproj",
+              "RelativeDocumentMoniker": "rX\\rX.fsproj",
+              "ToolTip": "C:\\Users\\ching\\OneDrive\\Desktop\\tyrX\\rX\\rX.fsproj",
+              "RelativeToolTip": "rX\\rX.fsproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001351|",
+              "WhenOpened": "2024-11-15T10:51:29.622Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -35,32 +44,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "develop.fs",
-              "DocumentMoniker": "C:\\github\\e999b3\\tyrX\\r25\\cmd\\develop.fs",
-              "RelativeDocumentMoniker": "r25\\cmd\\develop.fs",
-              "ToolTip": "C:\\github\\e999b3\\tyrX\\r25\\cmd\\develop.fs",
-              "RelativeToolTip": "r25\\cmd\\develop.fs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-31T14:32:38.832Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "blank.fs",
-              "DocumentMoniker": "C:\\github\\e999b3\\tyrX\\r25\\cmd\\blank.fs",
-              "RelativeDocumentMoniker": "r25\\cmd\\blank.fs",
-              "ToolTip": "C:\\github\\e999b3\\tyrX\\r25\\cmd\\blank.fs",
-              "RelativeToolTip": "r25\\cmd\\blank.fs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-29T19:51:09.841Z",
-              "EditorCaption": ""
             }
           ]
         }
