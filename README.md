@@ -1,4 +1,8 @@
 # tyrX
+
+
+
+
  
 **tyrX** is designed specifically for Autodesk Revit, starting from version 2025. With the shift to the .NET 8.0 framework in Revit 2025, it is essential for associated plugins to align with this update. Building on the legacy of its predecessor, **tyRevit**, **tyrX** continues to offer a lightweight external command solution for Revit, while upholding its core mission: empowering users to create custom Revit workflows using F# programming. It leverages the powerful IntelliSense capabilities of Visual Studio Community and Visual Studio Code to enhance and streamline coding efficiency for Revit development.
 
@@ -19,20 +23,27 @@ You can either:
 ### 3. Open the Project
 - Open the unzipped folder with **Visual Studio Code** or load the solution file in **Visual Studio**.
 
-### 4. Edit the Add-in Path
+### 4. Check RevitVersion and Compile
+Depending on your Revit version, change the constant **RevitVersion** in the .fsproj file. 
+
+![image](https://github.com/user-attachments/assets/3658b1ce-873f-471b-8fb1-0416740d08eb)
+
+When compiling, Visual Studio will choose the targeted Revit API version to reference. If the chosen Revit major version is prior to 2025, the constant **TargetFramework** will be set to **net48**, otherwise it will target **net8.0-windows**.
+
+### 5. Edit the Add-in Path
 Modify the `tyrX.addin` file to point to the correct path of the built assembly `rX.dll`.
 
 ![image](https://github.com/user-attachments/assets/31d110b3-2d51-4da3-8610-01b91d73b3ce)
 
 Change the highlighted line `<Assembly>...</Assembly>` to your own assembly path.
 
-### 5. Copy the Add-in File
+### 6. Copy the Add-in File
 Copy the `tyrX.addin` file to the appropriate Revit add-in directory:
 
 - **For current user**: `%appdata%\Autodesk\Revit\Addins\2025`
 - **For all users**: `%programdata%\Autodesk\Revit\Addins\2025`
 
-### 6. Launch Revit
+### 7. Launch Revit
 Start **Revit 2025**, and you are ready to go!
 
 
