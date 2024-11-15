@@ -7,12 +7,12 @@
 		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
 		
 		<!-- Set RevitVersion based on the version you want -->
-		<RevitVersion>2024.0.0</RevitVersion>
+		<RevitVersion>2025.0.0</RevitVersion>
 		
 		<MajorVersion>$([System.Int32]::Parse($([System.String]::Copy($(RevitVersion)).Split('.')[0])))</MajorVersion>
 	  	<OutputPath>bin/r$(MajorVersion)\</OutputPath>
-	  	<AssemblyVersion>2024.11.15.83</AssemblyVersion>
-	  	<FileVersion>2024.11.15.83</FileVersion>
+	  	<AssemblyVersion>2024.11.15.86</AssemblyVersion>
+	  	<FileVersion>2024.11.15.86</FileVersion>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<Platforms>AnyCPU;x64</Platforms>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
