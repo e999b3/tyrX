@@ -36,8 +36,8 @@ Change the highlighted line `<Assembly>...</Assembly>` to your own assembly path
 ### 6. Copy the Add-in File
 Copy the `tyrX.addin` file to the appropriate Revit add-in directory:
 
-- **For current user**: `%appdata%\Autodesk\Revit\Addins\2025`
-- **For all users**: `%programdata%\Autodesk\Revit\Addins\2025`
+- **For current user**: `%appdata%\Autodesk\Revit\Addins\<RevitMajorVersion>`
+- **For all users**: `%programdata%\Autodesk\Revit\Addins\<RevitMajorVersion>`
 
 ### 7. Launch Revit
 Start **Revit 2025**, and you are ready to go!
